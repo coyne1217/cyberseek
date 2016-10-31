@@ -1,0 +1,29 @@
+source_id,source,level,target_id,target
+e1,Cybersecurity Specialist / Technician,Entry-Level,m1,Cybersecurity Analyst
+e1,Cybersecurity Specialist / Technician,Entry-Level,m2,Cybersecurity Consultant
+e1,Cybersecurity Specialist / Technician,Entry-Level,m3,Penetration & Vulnerability Tester
+e2,Cyber Crime Analyst / Investigator,Entry-Level,m1,Cybersecurity Analyst
+e2,Cyber Crime Analyst / Investigator,Entry-Level,m2,Cybersecurity Consultant
+e2,Cyber Crime Analyst / Investigator,Entry-Level,m3,Penetration & Vulnerability Tester
+e3,Incident Analyst / Responder,Entry-Level,m2,Cybersecurity Consultant
+e3,Incident Analyst / Responder,Entry-Level,m3,Penetration & Vulnerability Tester
+e3,Incident Analyst / Responder,Entry-Level,m1,Cybersecurity Analyst
+e4,IT Auditor,Entry-Level,m3,Penetration & Vulnerability Tester
+e4,IT Auditor,Entry-Level,m2,Cybersecurity Consultant
+m1,Cybersecurity Analyst,Mid-Level,h2,Cybersecurity Engineer
+m1,Cybersecurity Analyst,Mid-Level,h3,Cybersecurity Architect
+m1,Cybersecurity Analyst,Mid-Level,h1,Cybersecurity Manager / Administrator
+m1,Cybersecurity Analyst,Mid-Level,m2,Cybersecurity Consultant
+m2,Cybersecurity Consultant,Mid-Level,h2,Cybersecurity Engineer
+m2,Cybersecurity Consultant,Mid-Level,h1,Cybersecurity Manager / Administrator
+m2,Cybersecurity Consultant,Mid-Level,h3,Cybersecurity Architect
+m2,Cybersecurity Consultant,Mid-Level,m1,Cybersecurity Analyst
+m3,Penetration & Vulnerability Tester,Mid-Level,h2,Cybersecurity Engineer
+m3,Penetration & Vulnerability Tester,Mid-Level,h3,Cybersecurity Architect
+m3,Penetration & Vulnerability Tester,Mid-Level,m2,Cybersecurity Consultant
+m3,Penetration & Vulnerability Tester,Mid-Level,m1,Cybersecurity Analyst
+h1,Cybersecurity Manager / Administrator,Advanced-Level,h1,Cybersecurity Manager / Administrator
+h2,Cybersecurity Engineer,Advanced-Level,h1,Cybersecurity Manager / Administrator
+h2,Cybersecurity Engineer,Advanced-Level,h3,Cybersecurity Architect
+h3,Cybersecurity Architect,Advanced-Level,h2,Cybersecurity Engineer
+h3,Cybersecurity Architect,Advanced-Level,h1,Cybersecurity Manager / Administrator
