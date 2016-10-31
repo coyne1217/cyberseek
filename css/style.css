@@ -841,6 +841,10 @@ tspan{
   100% { opacity:1; }
 }
 
+#location_quotientSvg {
+    margin-top: 17px;
+}
+
 @media (max-width: 1033px){
   .titlCont{
     min-width: 234px;
@@ -881,6 +885,12 @@ tspan{
   .no3,.no4{
     border-top: 1px solid #CFD8DC;
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 770px){
+  .classNote{
+    display: none;
   }
 }
 
