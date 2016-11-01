@@ -105,8 +105,10 @@ body {
   position: absolute;
   top: 0;
   z-index: -10;
-  height: 500px; 
+  height: 530px;
+  background-color: #000;
   background-attachment: fixed;
+  background-repeat: no-repeat;
  }
 
 .whiteBox {
