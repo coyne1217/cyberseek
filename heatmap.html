@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-509195-35', 'auto');
-    ga('send', 'pageview');
-
-    </script>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Cybersecurity Supply And Demand Heat Map</title>
@@ -26,18 +14,15 @@
 
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/auto-complete.css">
-    <link rel="stylesheet" href="css/share-button.css">
+    <link rel="stylesheet" href="css/share-button.min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <script type="text/javascript">
     window.onload = function(){
-        var el = document.getElementById('prelC');
-        el.style.display = 'none';
-        var cont = document.getElementById('con');
-        cont.style.opacity = '1';
+        
     };
     </script>
     <img id='prelC' src="images/c.svg"></img>
@@ -73,11 +58,17 @@
         </div>
         
         <div class='mapMenuCont'>
+            <form class="StCouBtns dataBtn">
+                  <input id="public" class="btn dataK" type="radio" name="level" val="public" checked="checked"><label for="public" class="statesBtn">Public data</label></input>
+                  <input id="private" class="btn dataK" type="radio" name="level" val="private"><label for="private" class="msasBtn">Private data</label></input>
+                </form>
             <div class="headerMenu">
                 <form class="StCouBtns">
-                  <input id="states" class="btn" type="radio" name="level" val="states" checked="checked"><label for="states" class="statesBtn">States</label></input>
-                  <input id="msas" class="btn" type="radio" name="level" val="msas"><label for="msas" class="msasBtn">Metro Areas</label></input>
+                  <input id="states" class="btn geo" type="radio" name="level" val="states" checked="checked"><label for="states" class="statesBtn">States</label></input>
+                  <input id="msas" class="btn geo" type="radio" name="level" val="msas"><label for="msas" class="msasBtn">Metro Areas</label></input>
                 </form>
+
+                
 
                 <div class="dropdown">
                   <select id="drpdn" class="dropbtn">
@@ -117,9 +108,9 @@
                         <img width='18px' height='17px' src='./images/xi_03.png' class='closeBtn' rel='1'>
                         <div class='infoTxtBox'>
                             <div class='chartTitle'>TOTAL CYBERSECURITY JOB OPENINGS</div>
-                            <div class='def'>Shows the number of online job listings for cybersecurity-related positions from July 2015 through June 2016.</div>
+                            <div class='def'>Shows the number of online job listings for cybersecurity-related positions from April 2016 through March 2017.</div>
                             <div class='chartTitle'>TOTAL EMPLOYED CYBERSECURITY WORKFORCE</div>
-                            <div class='def'>Shows the estimated number of employed cybersecurity workers in 2016.</div>
+                            <div class='def'>Shows the estimated number of workers employed in cybersecurity-related jobs in 2016. This includes workers in primary cybersecurity jobs – such as cybersecurity analysts – as well as workers in roles requiring cybersecurity-related skills and certifications to capture the full potential cybersecurity workforce.</div>
                         </div>
                     </div>
                     <div class='boxContent'>
@@ -130,7 +121,7 @@
                             <div class='openingsBar'></div>
                         </div>
                         <div class='supply'>
-                            <div class='chartTitle'>TOTAL EMPLOYED CYBERSECURITY WORKFORCE</div>
+                            <div class='chartTitle'>TOTAL EMPLOYED CYBERSECURITY WORKFORCE<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='1'></div>
                             <div class='supplyNumber'></div>
                             <div class='supplyBar'></div>
                         </div>
@@ -144,7 +135,7 @@
                             <div class='chartTitle'>SUPPLY OF CYBERSECURITY WORKERS</div>
                             <div class='def'>A comparison of the currently employed cybersecurity workforce relative to demand in a particular location.</div>
                             <div class='chartTitle'>CYBERSECURITY WORKFORCE SUPPLY/DEMAND RATIO</div>
-                            <div class='def'>Shows the ratio of existing cybersecurity workers to cybersecurity job openings. The national average for all jobs is 5.0; the national average for cybersecurity jobs is only 2.2.</div>
+                            <div class='def'>Shows the ratio of existing cybersecurity workers to cybersecurity job openings. The national average for all jobs is 5.6; the national average for cybersecurity jobs is only 2.5.</div>
                         </div>
                     </div>
                     <div class='boxContent'>
@@ -255,9 +246,9 @@
     <script src="js/auto-complete.min.js"></script>
     <script src="js/queue.v1.min.js"></script>
     <script src="js/topojson.v1.min.js"></script>
-    <script src="js/colorbrewer.js"></script>
+    <script src="js/colorbrewer.min.js"></script>
     <script src="js/share-button.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/heatmap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/heatmap.min.js"></script>
 </body>
 </html>
