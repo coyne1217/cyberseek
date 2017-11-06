@@ -14,9 +14,8 @@
 
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/auto-complete.css">
-    <link rel="stylesheet" href="css/share-button.min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -27,40 +26,14 @@
     </script>
     <img id='prelC' src="images/c.svg"></img>
 
-    
-    <!--- NAVIGATION BAR -->
-    <div class='pos-f-t'>
-      <nav class="navbar navbar-light navbar-static-top bg-faded">
-        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-        &#9776;
-        </button>
-        <div class="inner">
-          <a id='lgBlue' href="index.html"><img width='180px' height='52px' class="masthead-brand" src='images/cs_logo.svg'></a>
-          <div class="nav-masthead collapse navbar-toggleable-md" id="exCollapsingNavbar2">
-            <ul class='nav navbar-nav'>
-              <li class="nav-item"><a id='aboutThis' class="nav-link" href="index.html#aboutit">About</a></li>
-              <li class="nav-item"><a class="nav-link active" href="heatmap.html">Interactive map</a></li>
-              <li class="nav-item"><a class="nav-link" href="pathway.html">Career pathway</a></li>
-              <li class="nav-item"><a id='who' class="nav-link" href="index.html#whoIsThis">Who this tool is for</a></li>
-              <li class="nav-item"><a id='projPartners' class="nav-link" href="index.html#partners">Project partners</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
     <div class='clear'></div>
     <div id='con' class="container">
-        <div class='titlCont'>
-            <!-- <a class="cyberseek-logo" href=""></a> -->
-            <div class='title'>Cybersecurity Supply/Demand Heat Map</div>
-            <div class='sub'>Cybersecurity talent gaps exist across the country. Closing these gaps requires detailed knowledge of the cybersecurity workforce in your region. This interactive heat map provides a granular snapshot of demand and supply data for cybersecurity jobs at the state and metro area levels, and can be used to grasp the challenges and opportunities facing your local cybersecurity workforce.</div>
-        <share-button></share-button>
-        </div>
         
         <div class='mapMenuCont'>
             <form class="StCouBtns dataBtn">
-                  <input id="public" class="btn dataK" type="radio" name="level" val="public" checked="checked"><label for="public" class="statesBtn">Public data</label></input>
-                  <input id="private" class="btn dataK" type="radio" name="level" val="private"><label for="private" class="msasBtn">Private data</label></input>
+                  <input id="all" class="btn dataK" type="radio" name="level" val="all" checked="checked"><label for="all" class="statesBtn dBtn">All Data</label></input>
+                  <input id="public" class="btn dataK" type="radio" name="level" val="public"><label for="public" class="statesBtn dBtn">Public Sector Data</label></input>
+                  <input id="private" class="btn dataK" type="radio" name="level" val="private"><label for="private" class="msasBtn dBtn">Private Sector Data</label></input>
                 </form>
             <div class="headerMenu">
                 <form class="StCouBtns">
@@ -100,155 +73,18 @@
         </div>
         <div class='clear'></div>
         
-        <h1 class='region'>National level</h1>
-        <div class="table">
-            <div class="row1 pure-g">
-                <div class="box no1 pure-u-1 pure-u-sm-1-1 pure-u-md-1-2 pure-u-lg-1-4 pure-u-xl-1-4">
-                    <div class='infoBox' id='b1'>
-                        <img width='18px' height='17px' src='./images/xi_03.png' class='closeBtn' rel='1'>
-                        <div class='infoTxtBox'>
-                            <div class='chartTitle'>TOTAL CYBERSECURITY JOB OPENINGS</div>
-                            <div class='def'>Shows the number of online job listings for cybersecurity-related positions from April 2016 through March 2017.</div>
-                            <div class='chartTitle'>TOTAL EMPLOYED CYBERSECURITY WORKFORCE</div>
-                            <div class='def'>Shows the estimated number of workers employed in cybersecurity-related jobs in 2016. This includes workers in primary cybersecurity jobs – such as cybersecurity analysts – as well as workers in roles requiring cybersecurity-related skills and certifications to capture the full potential cybersecurity workforce.</div>
-                        </div>
-                    </div>
-                    <div class='boxContent'>
-                        <div class='openings'>
-                            <div class='chartTitle'>TOTAL CYBERSECURITY JOB OPENINGS<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='1'></div>
-
-                            <div class='openingsNumber'></div>
-                            <div class='openingsBar'></div>
-                        </div>
-                        <div class='supply'>
-                            <div class='chartTitle'>TOTAL EMPLOYED CYBERSECURITY WORKFORCE<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='1'></div>
-                            <div class='supplyNumber'></div>
-                            <div class='supplyBar'></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box no2 pure-u-1 pure-u-sm-1-1 pure-u-md-1-2 pure-u-lg-1-4 pure-u-xl-1-4">
-                    <div class='infoBox' id='b2'>
-                        <img width='17px' height='15px' src='./images/xi_03.png' class='closeBtn' rel='2'>
-                        <div class='infoTxtBox'>
-                            <div class='chartTitle'>SUPPLY OF CYBERSECURITY WORKERS</div>
-                            <div class='def'>A comparison of the currently employed cybersecurity workforce relative to demand in a particular location.</div>
-                            <div class='chartTitle'>CYBERSECURITY WORKFORCE SUPPLY/DEMAND RATIO</div>
-                            <div class='def'>Shows the ratio of existing cybersecurity workers to cybersecurity job openings. The national average for all jobs is 5.6; the national average for cybersecurity jobs is only 2.5.</div>
-                        </div>
-                    </div>
-                    <div class='boxContent'>
-                        <div class='subBox'>
-                            <div class='chartTitle'>SUPPLY OF CYBERSECURITY WORKERS<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='2'></div>
-                            <div class='supply_demand_qualifier'></div>
-                        </div>
-                        <div class='subBox'>
-                            <div class='chartTitle'>CYBERSECURITY WORKFORCE SUPPLY/DEMAND RATIO</div>
-                            <div id='supply_demand_ratioChart'></div>
-                        </div>   
-                    </div>
-                </div>
-
-                <div class="box no3 pure-u-1 pure-u-sm-1-1 pure-u-md-1-2 pure-u-lg-1-4 pure-u-xl-1-4">
-                    <div class='infoBox' id='b3'>
-                        <img width='17px' height='15px' src='./images/xi_03.png' class='closeBtn' rel='3'>
-                        <div class='infoTxtBox'>
-                            <div class='chartTitle'>GEOGRAPHIC CONCENTRATION</div>
-                            <div class='def'>A measure of the concentration of cybersecurity job demand in a specific location.</div>
-                            <div class='chartTitle'>LOCATION QUOTIENT</div>
-                            <div class='def'>Measures the concentration of cybersecurity job demand in a specific location relative to the national average. A location quotient of 1 is average, below 1 is below average, and above 1 is above average.</div>
-                        </div>
-                    </div>
-                    <div class='boxContent'>
-                        <div class='subBox'>
-                            <div class='chartTitle'>GEOGRAPHIC CONCENTRATION<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='3'></div>
-                            <div class='location_quotient_qualifier'></div>
-                        </div>
-                         <div class='subBox'>
-                            <div class='chartTitle'>LOCATION QUOTIENT</div>
-                            <div id='location_quotientChart'></div>
-                         </div>
-                    </div>
-                </div>
-
-                <div class="box no4 pure-u-1 pure-u-sm-1-1 pure-u-md-1-2 pure-u-lg-1-4 pure-u-xl-1-4">
-                    <div class='infoBox' id='b4'>
-                        <img width='17px' height='15px' src='./images/xi_03.png' class='closeBtn' rel='4'>
-                        <div class='infoTxtBox'>
-                            <div class='chartTitle'>TOP CYBERSECURITY JOB TITLES</div>
-                            <div class='def'>Shows the top job titles requested by employers within the cybersecurity job market in a particular location.</div>
-                        </div>
-                    </div>
-                    <div class='boxContent'>
-                        <div class='chartTitle'>TOP CYBERSECURITY JOB TITLES<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='4'></div>
-                        <ul id='topJobsList'>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row2 pure-g">
-                <div class="box no5 pure-u-1 pure-u-sm-1-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2">
-                    <div class='infoBox' id='b5'>
-                        <img width='17px' height='15px' src='./images/xi_03.png' class='closeBtn' rel='5'>
-                        <div class='infoTxtBox'>
-                            <div class='chartTitle'>POSTINGS BY NICE CYBERSECURITY WORKFORCE FRAMEWORK CATEGORY</div>
-                            <div class='def'>Shows the number of cybersecurity job openings mapping to each NICE Cybersecurity Workforce Framework category.</div>
-                        </div>
-                    </div>
-                    <div class='boxContent'>
-                        <div class='chartTitle'>POSTINGS BY NICE CYBERSECURITY WORKFORCE FRAMEWORK CATEGORY<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='5'></div>
-                        <div class='treemap'></div>
-                    </div>
-
-                </div>
-                <div class="box no6 pure-u-1 pure-u-sm-1-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2">
-                    <div class='infoBox' id='b6'>
-                        <img width='17px' height='15px' src='./images/xi_03.png' class='closeBtn' rel='6'>
-                        <div class='infoTxtBox'>
-                            <div class='chartTitle'>CERTIFICATION HOLDERS / OPENINGS REQUESTING CERTIFICATION</div>
-                            <div class='def'>Shows the ratio of current holders of common cybersecurity-related certifications to job openings for each certification.</div>
-                        </div>
-                    </div>
-                    <div class='boxContent'>
-                        <div class='chartTitle'>CERTIFICATION HOLDERS / OPENINGS REQUESTING CERTIFICATION<img width='17px' height='15px' src='./images/i_03.png' class='infIcon' rel='6'></div>
-                        <div class='key'>
-                            <div class='bCont'>
-                                <div class='keyB holders'></div>
-                                <div class='keyTxt'>Certification holders</div>
-                            </div>
-                            <div class='bCont'>
-                                <div class='keyB opens'></div>
-                                <div class='keyTxt'>Openings requesting certification</div>
-                            </div>
-                        </div>
-                        <div class='barChart'></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <a class="infogr8-link" href="http://www.infogr8.com/" target="_blank"></a> -->
+        <a href="http://cyberseek.org/heatmap.html" class="actionBtn">EXPLORE MORE +</a>
+        <a id='lgBlue' style="float:right;" target="_blank" href="http://www.cyberseek.org"><img width='130px' height='42px' class="masthead-brand" src='images/cs_logo.svg'></a>
     </div>
-    
-    <div class='footer'>
-        <a href="mailto:feedback@cyberseek.org">
-        <div class='feedbackBtn'>
-          <img class='feedImg' src="images/bubble.svg" width='25px' height='25px'>
-          <span class='feed'>Feedback</span>
-          <div class='clear'></div>
-        </div>
-        </a>
-      <!-- <p class='credits'>Developed by <a href="http://www.infogr8.com"><img width='60px' src="images/Infogr8_logo_rgb_white.svg"></a></p> -->
-    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/d3.min.js"></script>
     <script src="js/auto-complete.min.js"></script>
     <script src="js/queue.v1.min.js"></script>
     <script src="js/topojson.v1.min.js"></script>
-    <script src="js/colorbrewer.min.js"></script>
-    <script src="js/share-button.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/heatmap.min.js"></script>
+    <script src="js/colorbrewer.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/heatmap.js"></script>
 </body>
 </html>

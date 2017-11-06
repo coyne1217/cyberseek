@@ -175,6 +175,8 @@ img {
   width: 98%;
   opacity: 0.2;
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .background {
@@ -183,7 +185,7 @@ img {
 
 .mapMenuCont{
   float: left;
-  width: calc(100% - 360px);
+  width: 100%;
   margin-left: 1%;
 }
 
@@ -191,11 +193,21 @@ img {
   padding-top: 15px;
   margin-left: 0.5%;
   margin-bottom: 5px;
+  float: left;
+  width: 100%;
 }
 
 .StCouBtns{
   float: left;
   width: 195px;
+}
+
+.dataBtn{
+  float: right;
+  min-width: 360px;
+  margin-top: 12px;
+  margin-left: 4px;
+  display: block;
 }
 
 .searchForm{
@@ -222,6 +234,7 @@ img {
 
 label{
   cursor: pointer!important;
+  display: initial!important;
 }
 
 input[type="radio"].btn {
@@ -845,6 +858,10 @@ tspan{
     margin-top: 17px;
 }
 
+.dBtn{
+  padding: 3px 2.3%!important;
+}
+
 @media (max-width: 1033px){
   .titlCont{
     min-width: 234px;
@@ -893,7 +910,6 @@ tspan{
     display: none;
   }
 }
-
 @media (max-width: 613px){
   .searchForm{
     width: 19%;
@@ -1019,15 +1035,27 @@ tspan{
     margin-left: 40px;
     margin-bottom: 0;
   }
+
+  .actionBtn{
+    position: absolute;
+    left: 24%!important;
+    bottom: 13%;
+  }
 }
 
 @media (max-width: 330px){
   input[type="radio"].btn + label {
     padding: 2px 3%;
+    font-size: 12px;
   }
 
   input[type="radio"].btn:checked + label {
     padding: 2px 3%;
+    font-size: 12px;
+  }
+
+  .dBtn{
+    padding: 3px 1.3%!important;
   }
 
   .filterBtns {
@@ -1050,5 +1078,37 @@ tspan{
     font-size: 10px;
   }
 
+  .dataBtn{
+    min-width: 312px;
+  }
+
 }
 
+.actionBtn{
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1rem;
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #50a9de;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-top: 30px;
+    position: absolute;
+    left: 40%;
+    transition: background-color .3s;
+}
+
+.actionBtn:hover{
+  background-color: #65b4e2;
+}
