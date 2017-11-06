@@ -1,0 +1,56 @@
+source_id,source,level,target_id,target
+e1,Cybersecurity Specialist / Technician,Entry-Level,m1,Cybersecurity Analyst
+e1,Cybersecurity Specialist / Technician,Entry-Level,m2,Cybersecurity Consultant
+e1,Cybersecurity Specialist / Technician,Entry-Level,m3,Penetration & Vulnerability Tester
+e2,Cyber Crime Analyst / Investigator,Entry-Level,m1,Cybersecurity Analyst
+e2,Cyber Crime Analyst / Investigator,Entry-Level,m2,Cybersecurity Consultant
+e2,Cyber Crime Analyst / Investigator,Entry-Level,m3,Penetration & Vulnerability Tester
+e3,Incident Analyst / Responder,Entry-Level,m2,Cybersecurity Consultant
+e3,Incident Analyst / Responder,Entry-Level,m3,Penetration & Vulnerability Tester
+e3,Incident Analyst / Responder,Entry-Level,m1,Cybersecurity Analyst
+e4,IT Auditor,Entry-Level,m3,Penetration & Vulnerability Tester
+e4,IT Auditor,Entry-Level,m2,Cybersecurity Consultant
+m1,Cybersecurity Analyst,Mid-Level,h2,Cybersecurity Engineer
+m1,Cybersecurity Analyst,Mid-Level,h3,Cybersecurity Architect
+m1,Cybersecurity Analyst,Mid-Level,h1,Cybersecurity Manager / Administrator
+m1,Cybersecurity Analyst,Mid-Level,m2,Cybersecurity Consultant
+m2,Cybersecurity Consultant,Mid-Level,h2,Cybersecurity Engineer
+m2,Cybersecurity Consultant,Mid-Level,h1,Cybersecurity Manager / Administrator
+m2,Cybersecurity Consultant,Mid-Level,h3,Cybersecurity Architect
+m2,Cybersecurity Consultant,Mid-Level,m1,Cybersecurity Analyst
+m3,Penetration & Vulnerability Tester,Mid-Level,h2,Cybersecurity Engineer
+m3,Penetration & Vulnerability Tester,Mid-Level,h3,Cybersecurity Architect
+m3,Penetration & Vulnerability Tester,Mid-Level,m2,Cybersecurity Consultant
+m3,Penetration & Vulnerability Tester,Mid-Level,m1,Cybersecurity Analyst
+h1,Cybersecurity Manager / Administrator,Advanced-Level,h1,Cybersecurity Manager / Administrator
+h2,Cybersecurity Engineer,Advanced-Level,h1,Cybersecurity Manager / Administrator
+h2,Cybersecurity Engineer,Advanced-Level,h3,Cybersecurity Architect
+h3,Cybersecurity Architect,Advanced-Level,h2,Cybersecurity Engineer
+h3,Cybersecurity Architect,Advanced-Level,h1,Cybersecurity Manager / Administrator
+f1,Networking,Feeder,e1,Cybersecurity Specialist / Technician
+f1,Networking,Feeder,e3,Incident Analyst / Responder
+f1,Networking,Feeder,e4,IT Auditor
+f1,Networking,Feeder,e2,Cyber Crime Analyst / Investigator
+f1,Networking,Feeder,m3,Penetration & Vulnerability Tester
+f1,Networking,Feeder,m1,Cybersecurity Analyst
+f1,Networking,Feeder,h2,Cybersecurity Engineer
+f1,Networking,Feeder,h3,Cybersecurity Architect
+f2,Software Development,Feeder,m1,Cybersecurity Analyst
+f2,Software Development,Feeder,m3,Penetration & Vulnerability Tester
+f2,Software Development,Feeder,h2,Cybersecurity Engineer
+f2,Software Development,Feeder,h3,Cybersecurity Architect
+f3,Systems Engineering,Feeder,e1,Cybersecurity Specialist / Technician
+f3,Systems Engineering,Feeder,e3,Incident Analyst / Responder
+f3,Systems Engineering,Feeder,e4,IT Auditor
+f3,Systems Engineering,Feeder,e2,Cyber Crime Analyst / Investigator
+f3,Systems Engineering,Feeder,m3,Penetration & Vulnerability Tester
+f3,Systems Engineering,Feeder,m1,Cybersecurity Analyst
+f3,Systems Engineering,Feeder,h2,Cybersecurity Engineer
+f3,Systems Engineering,Feeder,h3,Cybersecurity Architect
+f4,Financial and Risk Analysis,Feeder,e1,Cybersecurity Specialist / Technician
+f4,Financial and Risk Analysis,Feeder,e3,Incident Analyst / Responder
+f4,Financial and Risk Analysis,Feeder,e4,IT Auditor
+f4,Financial and Risk Analysis,Feeder,e2,Cyber Crime Analyst / Investigator
+f5,Security Intelligence,Feeder,e1,Cybersecurity Specialist / Technician
+f5,Security Intelligence,Feeder,e3,Incident Analyst / Responder
+f5,Security Intelligence,Feeder,e2,Cyber Crime Analyst / Investigator

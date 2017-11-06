@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Cybersecurity Supply And Demand Heat Map</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cybersecurity Supply And Demand Heat Map" />
+    <meta property="og:description" content="A granular snapshot of demand and supply data for cybersecurity jobs at the state and metro area levels" />
+    <meta name="description" content="A granular snapshot of demand and supply data for cybersecurity jobs at the state and metro area levels">
+    <meta property="twitter:description" content="Interactive map of demand and supply data for cybersecurity jobs at the state and metro area levels" />
+    <meta property="og:image" content="images/tool_07.png" />
+    <meta property="twitter:image" content="images/tool_07.png" />
+
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/auto-complete.css">
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <script type="text/javascript">
+    window.onload = function(){
+        
+    };
+    </script>
+    <img id='prelC' src="images/c.svg"></img>
+
+    <div class='clear'></div>
+    <div id='con' class="container">
+        
+        <div class='mapMenuCont'>
+            <form class="StCouBtns dataBtn">
+                  <input id="all" class="btn dataK" type="radio" name="level" val="all" checked="checked"><label for="all" class="statesBtn dBtn">All Data</label></input>
+                  <input id="public" class="btn dataK" type="radio" name="level" val="public"><label for="public" class="statesBtn dBtn">Public Sector Data</label></input>
+                  <input id="private" class="btn dataK" type="radio" name="level" val="private"><label for="private" class="msasBtn dBtn">Private Sector Data</label></input>
+                </form>
+            <div class="headerMenu">
+                <form class="StCouBtns">
+                  <input id="states" class="btn geo" type="radio" name="level" val="states" checked="checked"><label for="states" class="statesBtn">States</label></input>
+                  <input id="msas" class="btn geo" type="radio" name="level" val="msas"><label for="msas" class="msasBtn">Metro Areas</label></input>
+                </form>
+
+                
+
+                <div class="dropdown">
+                  <select id="drpdn" class="dropbtn">
+                    <option value="total_postings">Total job openings</option>
+                    <option value="total_supply">Supply of workers</option>
+                    <option value="supply_demand_ratio">Supply/demand ratio</option>
+                    <option value="location_quotient">Location quotient</option>
+                    </select>
+                </div>
+
+                <form class="searchForm" onsubmit="return false;" class="pure-form">
+                    <input id="search" type="text" name="q" placeholder="Search State">
+                </form>
+                <div class='clear'></div>
+            </div>
+            <div class='clear'></div>
+            
+            <div class="map">
+                <div class='filterBtns'>
+                    <div class='desc'>Filter Metro Area by population</div>
+                    <div class='filter'>Small</div>
+                    <div class='filter'>Medium</div>
+                    <div class='filter'>Large</div>
+                    <div class='filter pressed' id='all'>All</div>
+                </div>
+                <div class='classNote' style='position:absolute;font-size: 9px;width: 160px;right: 0;font-weight: 100;bottom: 40px;'>For the map data classification we used quantiles method. For the location quotient map we used manual breaks.</div>
+            </div>
+            <div class='clear'></div>
+        </div>
+        <div class='clear'></div>
+        
+        <a href="http://cyberseek.org/heatmap.html" class="actionBtn">EXPLORE MORE +</a>
+        <a id='lgBlue' style="float:right;" target="_blank" href="http://www.cyberseek.org"><img width='130px' height='42px' class="masthead-brand" src='images/cs_logo.svg'></a>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/auto-complete.min.js"></script>
+    <script src="js/queue.v1.min.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/colorbrewer.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/heatmap.js"></script>
+</body>
+</html>
